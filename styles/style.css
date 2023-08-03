@@ -1,0 +1,197 @@
+body {
+    background-color: #0f1624;
+    font-family: 'Handjet', cursive;
+    font-size: 1.1em;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 110px;
+    padding: 0 10%;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}
+.menu a {
+    padding: 12px 16px;
+    margin: 1em;
+    max-width: fit-content;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;  
+    background-color: rgba(0, 0, 0, 0.623);
+    font-size: 30px;
+}
+.home-link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-right: 25%;
+    width: 10%;
+    padding: 0;
+
+}
+.home-link img{
+    max-width: 2em;
+    max-height: 2em;
+    border-radius: 50%;
+}
+.home-link h1{
+    padding-left: 10px;
+    font-size: 40px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding:  1em;
+    margin: 90px 25%;
+}
+.about
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 50%;
+    padding: 1em;    
+    color: #fff;   
+}
+.about
+.about-text h2 {
+    font-size: 50px;
+}
+.about
+.about-text p {
+    text-align: justify;
+    font-size: 25px;
+}
+.about
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+.about
+.profile-picture img {
+    width: 250px;
+    height: 250px;
+    border-radius: 40% 5%;
+}
+.about
+.profile-picture a {
+    padding: 8px 16px;
+    margin: 1em;
+    max-width: fit-content;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.623);
+    font-size: 25px;
+}
+
+.section-title {
+    width: 100%;
+    padding: 0 26%;
+    font-size: 50px;
+    color: #fff;
+}
+
+.projets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding:  1em;
+    margin: 90px 25%;
+}
+
+.projets
+.readme-projet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 50%;
+    padding: 1em;    
+    color: #fff;
+}
+.projets
+.readme-projet h2{
+    font-size: 40px;
+}
+.projets
+.readme-projet p {
+    text-align: justify;
+    font-size: 25px;
+}
+.projets
+.aperçu-projet {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.projets
+.aperçu-projet img {
+    height: 250px;
+    box-shadow: 5px 5px 5px 5px black ;
+    border-radius: 25px;
+}
+
+.Technologies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding:  1em;
+    margin: 90px 25%;
+    gap: 50px;
+}
+.techno{
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 30px;
+}
+.techno img {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 40px;
+}
+.techno p {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 35px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.top {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    text-decoration: none;
+    color: #fff;   
+    border-radius: 50% 10%;  
+}
