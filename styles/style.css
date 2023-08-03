@@ -12,6 +12,8 @@ header {
     height: 110px;
     padding: 0 10%;
 }
+
+/* Styles du menu */
 .menu {
     display: flex;
     flex-direction: row;
@@ -28,7 +30,7 @@ header {
     background-color: rgba(0, 0, 0, 0.623);
     font-size: 30px;
 }
-.home-link {
+.title {
     color: #fff;
     display: flex;
     align-items: center;
@@ -37,16 +39,24 @@ header {
     padding: 0;
 
 }
-.home-link img{
+.title img{
     max-width: 2em;
     max-height: 2em;
     border-radius: 50%;
 }
-.home-link h1{
+.title h1{
     padding-left: 10px;
     font-size: 40px;
 }
 
+/*Style du titre des sections*/
+.section-title {
+    width: 100%;
+    padding: 0 26%;
+    font-size: 50px;
+    color: #fff;
+}
+/*Style section à propo*/
 .about {
     display: flex;
     flex-direction: row;
@@ -99,14 +109,7 @@ header {
     background-color: rgba(0, 0, 0, 0.623);
     font-size: 25px;
 }
-
-.section-title {
-    width: 100%;
-    padding: 0 26%;
-    font-size: 50px;
-    color: #fff;
-}
-
+/*Styles de la saction projet*/
 .projets {
     display: flex;
     flex-direction: row;
@@ -149,7 +152,7 @@ header {
     box-shadow: 5px 5px 5px 5px black ;
     border-radius: 25px;
 }
-
+/*Styles de la section technologies*/
 .Technologies{
     display: flex;
     flex-direction: row;
@@ -182,11 +185,7 @@ header {
     color: #fff;
     font-size: 35px;
 }
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-}
+/*Style du bouton retour en haut*/
 .top {
     position: fixed;
     bottom: 1em;
