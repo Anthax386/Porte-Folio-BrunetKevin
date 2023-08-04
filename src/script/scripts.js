@@ -37,7 +37,7 @@ let technoGithub = {
     name:"Github",
 };
 let technoJavaScript = {
-    image:"../src/image/javascript.png",
+    image:"../src/images/javascript.png",
     imageAlt:"JavaScript",
     name:"JavaScript",
 };
