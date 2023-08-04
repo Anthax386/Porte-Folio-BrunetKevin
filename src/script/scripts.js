@@ -36,7 +36,13 @@ let technoGithub = {
     imageAlt: "Github",
     name:"Github",
 };
-technologies.push(technoHTML, technoCSS, technoVsCode, technoGit, technoGithub);
+let technoJavaScript = {
+    image:"../src/image/javascript.png",
+    imageAlt:"JavaScript",
+    name:"JavaScript",
+};
+
+technologies.push(technoHTML, technoCSS, technoVsCode, technoGit, technoGithub, technoJavaScript);
 
 for (let i = 0; i < projets.length; i++) {
     /*Selectionne la section .projets*/
