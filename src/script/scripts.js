@@ -72,6 +72,7 @@ for (let i = 0; i < projets.length; i++) {
     //Créer un lien vers la page github
     const projetGithubLink = document.createElement("a");
     projetGithubLink.href = projets[i].githubLink;
+    projetGithubLink.target = "_blank"
     projetPreview.appendChild(projetGithubLink);
 
     /*Créer la balise img*/
