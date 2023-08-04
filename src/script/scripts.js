@@ -42,7 +42,7 @@ let technoJavaScript = {
     name:"JavaScript",
 };
 
-technologies.push(technoHTML, technoCSS, technoVsCode, technoGit, technoGithub, technoJavaScript);
+technologies.push(technoHTML, technoCSS, technoJavaScript, technoVsCode, technoGit, technoGithub);
 
 for (let i = 0; i < projets.length; i++) {
     /*Selectionne la section .projets*/
