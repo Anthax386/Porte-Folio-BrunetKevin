@@ -1,9 +1,11 @@
 body {
-    background-color: #0f1624;
+    padding: 0;
+    background-color: #300000;
     font-family: 'Handjet', cursive;
     font-size: 1.1em;
 }
 header {
+    background-color: #5f1e00;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -27,8 +29,9 @@ header {
     text-decoration: none;
     color: #fff;
     border-radius: 30px;  
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: #3b0000;
     font-size: 30px;
+    box-shadow: 5px 5px 10px #000000b0;
 }
 .title {
     color: #fff;
@@ -95,6 +98,7 @@ header {
     width: 250px;
     height: 250px;
     border-radius: 40% 5%;
+    box-shadow: 5px 5px 10px #000000b0
 }
 .about
 .profile-picture a {
@@ -104,51 +108,70 @@ header {
     text-decoration: none;
     color: #fff;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: #5f1e00;
+    box-shadow: 5px 5px 10px #000000b0;
     font-size: 25px;
 }
 /*Styles de la saction projet*/
 .projets {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     height: auto;
-    padding:  1em;
     margin: 90px 25%;
+    gap: 20px;
 }
 
-.projets
+.projet {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    background-color: #5f1e00;
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow: 5px 5px 10px #000000b0;
+}
+.projet
 .readme-projet {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    width: 50%;
-    padding: 1em;    
+    align-items: center;   
     color: #fff;
 }
-.projets
+.projet
 .readme-projet h2{
     font-size: 40px;
 }
-.projets
+.projet
 .readme-projet p {
     text-align: justify;
     font-size: 25px;
+    width: 400px;
 }
-.projets
+.projet
 .aperçu-projet {
-    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 }
-.projets
-.aperçu-projet a img {
-    height: 200px;
-    box-shadow: 5px 5px 5px 5px black ;
+.projet
+.aperçu-projet img {
+    width: 400px;
+    box-shadow: 5px 5px 10px #000000b0 ;
     border-radius: 25px;
+}
+.projet
+.aperçu-projet a {
+    padding: 8px 16px;
+    margin: 1em;
+    max-width: fit-content;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    background-color: #3b0000;
+    box-shadow: 5px 5px 10px #000000b0;
+    font-size: 25px;
 }
 /*Styles de la section technologies*/
 .Technologies{
@@ -163,12 +186,13 @@ header {
     gap: 50px;
 }
 .techno{
+    background-color: #5f1e00;
     padding: 12px 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    box-shadow: 5px 5px 5px;
+    box-shadow: 5px 5px 10px #000000b0;
     border-radius: 30px;
 }
 .techno img {

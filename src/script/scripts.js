@@ -2,7 +2,7 @@ let projets = [];
 
 let porteFolio = {
     name: "Porte folio",
-    readme: "Cette première ébauche de porte folio est completement statique et n'utilise que html/css et JS. Elle a été créer peu avant mon entrée en formation.",
+    readme: "Cette première ébauche de porte folio est completement statique et n'utilise que html/css et JavaScript. Elle a été créer peu avant mon entrée en formation.",
     preview: "../src/images/appercu-porte-folio.png",
     imageAlt: "porte folio preview",
     githubLink:"https://github.com/Anthax386/Porte-Folio-BrunetKevin",
@@ -49,10 +49,15 @@ for (let i = 0; i < projets.length; i++) {
     /*Selectionne la section .projets*/
     const sectionProjets = document.querySelector(".projets");
 
-    /*Crer une div Qui contiendra le text*/
-    const projetText = document.createElement("div");
+    //Créer une div qui contient les deux span
+    const divProjet = document.createElement("div");
+    divProjet.classList.add("projet");
+    sectionProjets.appendChild(divProjet)
+
+    /*Crer une span Qui contiendra le text*/
+    const projetText = document.createElement("span");
     projetText.classList.add("readme-projet");
-    sectionProjets.appendChild(projetText);
+    divProjet.appendChild(projetText);
 
     /*Créer les deux balises de text (h2 et p)*/
     const projetName = document.createElement("h2");
@@ -64,22 +69,23 @@ for (let i = 0; i < projets.length; i++) {
     projetText.appendChild(projetName);
     projetText.appendChild(projetReadme);
 
-    /*Créer une div qui contiendra l'image*/
-    const projetPreview = document.createElement("div");
+    /*Créer une span qui contiendra l'image*/
+    const projetPreview = document.createElement("span");
     projetPreview.classList.add("aperçu-projet");
-    sectionProjets.appendChild(projetPreview);
-
-    //Créer un lien vers la page github
-    const projetGithubLink = document.createElement("a");
-    projetGithubLink.href = projets[i].githubLink;
-    projetGithubLink.target = "_blank"
-    projetPreview.appendChild(projetGithubLink);
+    divProjet.appendChild(projetPreview);
 
     /*Créer la balise img*/
     const projetImg = document.createElement("img");
     projetImg.src = projets[i].preview;
     projetImg.alt = projets[i].imageAlt;
-    projetGithubLink.appendChild(projetImg);
+    projetPreview.appendChild(projetImg);
+
+    //Créer un lien vers la page github
+    const projetGithubLink = document.createElement("a");
+    projetGithubLink.href = projets[i].githubLink;
+    projetGithubLink.target = "_blank"
+    projetGithubLink.textContent="Github"
+    projetPreview.appendChild(projetGithubLink);
 };
 
 for (let i=0; i < technologies.length; i++) {
