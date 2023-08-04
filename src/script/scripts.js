@@ -38,12 +38,6 @@ let technoGithub = {
 };
 technologies.push(technoHTML, technoCSS, technoVsCode, technoGit, technoGithub);
 
-console.log(technologies);
-console.log(projets);
-console.log(technologies[2].text);
-console.log(projets[0]);
-
-
 for (let i = 0; i < projets.length; i++) {
     /*Selectionne la section .projets*/
     const sectionProjets = document.querySelector(".projets");
