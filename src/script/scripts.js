@@ -2,9 +2,10 @@ let projets = [];
 
 let porteFolio = {
     name: "Porte folio",
-    readme: "Cette première ébauche de porte folio est completement statique et n'utilise que html/css. Elle a été créer peu avant mon entrée en formation.",
+    readme: "Cette première ébauche de porte folio est completement statique et n'utilise que html/css et JS. Elle a été créer peu avant mon entrée en formation.",
     preview: "../src/images/appercu-porte-folio.png",
     imageAlt: "porte folio preview",
+    githubLink:"https://github.com/Anthax386/Porte-Folio-BrunetKevin",
 };
 projets.push(porteFolio);
 
@@ -68,11 +69,16 @@ for (let i = 0; i < projets.length; i++) {
     projetPreview.classList.add("aperçu-projet");
     sectionProjets.appendChild(projetPreview);
 
+    //Créer un lien vers la page github
+    const projetGithubLink = document.createElement("a");
+    projetGithubLink.href = projets[i].githubLink;
+    projetPreview.appendChild(projetGithubLink);
+
     /*Créer la balise img*/
     const projetImg = document.createElement("img");
     projetImg.src = projets[i].preview;
     projetImg.alt = projets[i].imageAlt;
-    projetPreview.appendChild(projetImg);
+    projetGithubLink.appendChild(projetImg);
 };
 
 for (let i=0; i < technologies.length; i++) {

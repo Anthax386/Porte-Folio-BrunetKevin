@@ -146,8 +146,8 @@ header {
     align-items: flex-end;
 }
 .projets
-.aperçu-projet img {
-    height: 250px;
+.aperçu-projet a img {
+    height: 200px;
     box-shadow: 5px 5px 5px 5px black ;
     border-radius: 25px;
 }
