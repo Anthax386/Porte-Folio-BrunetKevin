@@ -16,6 +16,12 @@
         margin-left: 25%;
         flex-direction: column;
         align-items: flex-start;
+        gap: 50px;
+    }
+    .technoTools,
+    .technoLang {
+        display: flex;
+        flex-direction: column;    
     }
     .about {
         margin: auto;

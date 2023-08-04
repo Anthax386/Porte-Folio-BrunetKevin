@@ -174,15 +174,26 @@ header {
     font-size: 25px;
 }
 /*Styles de la section technologies*/
-.Technologies{
+.Technologies {
+    display: flex;
+    flex-direction: column;
+    margin: 90px 25%;
+}
+.Technologies h3 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.technoTools,
+.technoLang {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     height: auto;
     padding:  1em;
-    margin: 90px 25%;
+    
     gap: 50px;
 }
 .techno{

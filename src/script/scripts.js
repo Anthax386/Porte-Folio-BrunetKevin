@@ -10,7 +10,8 @@ let porteFolio = {
 projets.push(porteFolio);
 
 
-let technologies = [];
+let technoLang = [];
+let technoTool = [];
 
 let technoHTML = {
     image:"../src/images/HTML5.png",
@@ -43,7 +44,8 @@ let technoJavaScript = {
     name:"JavaScript",
 };
 
-technologies.push(technoHTML, technoCSS, technoJavaScript, technoVsCode, technoGit, technoGithub);
+technoLang.push(technoHTML, technoCSS, technoJavaScript);
+technoTool.push(technoVsCode, technoGit, technoGithub);
 
 for (let i = 0; i < projets.length; i++) {
     /*Selectionne la section .projets*/
@@ -88,21 +90,41 @@ for (let i = 0; i < projets.length; i++) {
     projetPreview.appendChild(projetGithubLink);
 };
 
-for (let i=0; i < technologies.length; i++) {
+for (let i=0; i < technoLang.length; i++) {
     /*Selection de la section techno*/
-    const sectionTechno = document.querySelector(".Technologies");
+    const sectionTechnoLang = document.querySelector(".technoLang");
 
     /*Création de la div qui contiendra toutes les infos*/
     const technoElement = document.createElement("div");
     technoElement.classList.add("techno");
-    sectionTechno.appendChild(technoElement);
+    sectionTechnoLang.appendChild(technoElement);
 
     const technoImage = document.createElement("img");
-    technoImage.src = technologies[i].image;
-    technoImage.alt = technologies[i].imageAlt;
+    technoImage.src = technoLang[i].image;
+    technoImage.alt = technoLang[i].imageAlt;
 
     const technoName = document.createElement("p");
-    technoName.textContent = technologies[i].name;
+    technoName.textContent = technoLang[i].name;
+
+    technoElement.appendChild(technoImage);
+    technoElement.appendChild(technoName);
+}
+
+for (let i=0; i < technoTool.length; i++) {
+    /*Selection de la section techno*/
+    const sectionTechnoTools = document.querySelector(".technoTools");
+
+    /*Création de la div qui contiendra toutes les infos*/
+    const technoElement = document.createElement("div");
+    technoElement.classList.add("techno");
+    sectionTechnoTools.appendChild(technoElement);
+
+    const technoImage = document.createElement("img");
+    technoImage.src = technoTool[i].image;
+    technoImage.alt = technoTool[i].imageAlt;
+
+    const technoName = document.createElement("p");
+    technoName.textContent = technoTool[i].name;
 
     technoElement.appendChild(technoImage);
     technoElement.appendChild(technoName);
