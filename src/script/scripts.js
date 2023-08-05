@@ -54,7 +54,7 @@ for (let i = 0; i < projets.length; i++) {
     //Créer une div qui contient les deux span
     const divProjet = document.createElement("div");
     divProjet.classList.add("projet");
-    sectionProjets.appendChild(divProjet)
+    sectionProjets.appendChild(divProjet);
 
     /*Crer une span Qui contiendra le text*/
     const projetText = document.createElement("span");
@@ -128,26 +128,4 @@ for (let i=0; i < technoTool.length; i++) {
 
     technoElement.appendChild(technoImage);
     technoElement.appendChild(technoName);
-}
-
-function sendMail() {
-    // Tester les donnees
-    if (document.getElementById("e-mail").value.length==0) {
-        alert("Saisir l'adresse du destinataire !!!");
-        return;
-    }
-    if (document.getElementById("object").value.length==0) {
-        alert("Saisir le titre !!!");
-        return;
-    }
-    if (document.getElementById("message").value.length==0) {
-        alert("Ecrire le message !!!");
-        return;
-    }
-    // Encoder l'url mailto
-    let url="mailto:contact@kevinbrunet.fr"+encodeURIComponent(document.getElementById("e-mail").value)
-        +"?subject="+encodeURIComponent(document.getElementById("object").value)
-            +"&body="+encodeURIComponent(document.getElementById("message").value);
-    // Ouvrir client messagerie
-    document.location=url;
 }
