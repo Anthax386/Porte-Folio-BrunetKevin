@@ -1,8 +1,8 @@
 let projets = [];
 
 let porteFolio = {
-    name: "Porte folio",
-    readme: "Cette première ébauche de porte folio est completement statique et n'utilise que html/css et JavaScript. Elle a été créer peu avant mon entrée en formation.",
+    name: "Portefolio",
+    readme: "Cette première ébauche de porte folio est complètement statique et n'utilise que HTML/Css et Javascript. Elle a été créer peu avant mon entrée en formation.",
     preview: "../src/images/appercu-porte-folio.png",
     imageAlt: "porte folio preview",
     githubLink:"https://github.com/Anthax386/Porte-Folio-BrunetKevin",
