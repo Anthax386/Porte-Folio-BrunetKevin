@@ -129,3 +129,25 @@ for (let i=0; i < technoTool.length; i++) {
     technoElement.appendChild(technoImage);
     technoElement.appendChild(technoName);
 }
+
+function sendMail() {
+    // Tester les donnees
+    if (document.getElementById("e-mail").value.length==0) {
+        alert("Saisir l'adresse du destinataire !!!");
+        return;
+    }
+    if (document.getElementById("object").value.length==0) {
+        alert("Saisir le titre !!!");
+        return;
+    }
+    if (document.getElementById("message").value.length==0) {
+        alert("Ecrire le message !!!");
+        return;
+    }
+    // Encoder l'url mailto
+    let url="mailto:contact@kevinbrunet.fr"+encodeURIComponent(document.getElementById("e-mail").value)
+        +"?subject="+encodeURIComponent(document.getElementById("object").value)
+            +"&body="+encodeURIComponent(document.getElementById("message").value);
+    // Ouvrir client messagerie
+    document.location=url;
+}
