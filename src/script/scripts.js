@@ -54,7 +54,7 @@ for (let i = 0; i < projets.length; i++) {
     //Créer une div qui contient les deux span
     const divProjet = document.createElement("div");
     divProjet.classList.add("projet");
-    sectionProjets.appendChild(divProjet)
+    sectionProjets.appendChild(divProjet);
 
     /*Crer une span Qui contiendra le text*/
     const projetText = document.createElement("span");
