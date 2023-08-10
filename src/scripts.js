@@ -1,131 +1,141 @@
 let projets = [];
 
 let porteFolio = {
-    name: "Portefolio",
-    readme: "Cette première ébauche de porte folio est complètement statique et n'utilise que HTML/Css et Javascript. Elle a été créer peu avant mon entrée en formation.",
-    preview: "../src/images/appercu-porte-folio.png",
-    imageAlt: "porte folio preview",
-    githubLink:"https://github.com/Anthax386/Porte-Folio-BrunetKevin",
+  name: "Portefolio",
+  readme:
+    "Cette première ébauche de porte folio est complètement statique et n'utilise que HTML/Css et Javascript. Elle a été créer peu avant mon entrée en formation.",
+  preview: "../src/images/appercu-porte-folio.png",
+  imageAlt: "porte folio preview",
+  githubLink: "https://github.com/Anthax386/Porte-Folio-BrunetKevin",
 };
 projets.push(porteFolio);
-
 
 let technoLang = [];
 let technoTool = [];
 
 let technoHTML = {
-    image:"../src/images/HTML5.png",
-    imageAlt: "HTML",
-    name:"HTML",
+  image: "../src/images/HTML5.png",
+  imageAlt: "HTML",
+  name: "HTML",
 };
 let technoCSS = {
-    image:"../src/images/CSS3.png",
-    imageAlt: "CSS",
-    name:"CSS",
+  image: "../src/images/CSS3.png",
+  imageAlt: "CSS",
+  name: "CSS",
 };
 let technoVsCode = {
-    image:"../src/images/VS-Code.png",
-    imageAlt: "VS Code",
-    name:"vs Code",
+  image: "../src/images/VS-Code.png",
+  imageAlt: "VS Code",
+  name: "vs Code",
 };
 let technoGit = {
-    image:"../src/images/GIT.png",
-    imageAlt: "GIT",
-    name:"GIT",
+  image: "../src/images/GIT.png",
+  imageAlt: "GIT",
+  name: "GIT",
 };
 let technoGithub = {
-    image:"../src/images/github.png",
-    imageAlt: "Github",
-    name:"Github",
+  image: "../src/images/github.png",
+  imageAlt: "Github",
+  name: "Github",
 };
 let technoJavaScript = {
-    image:"../src/images/javascript.png",
-    imageAlt:"JavaScript",
-    name:"JavaScript",
+  image: "../src/images/javascript.png",
+  imageAlt: "JavaScript",
+  name: "JavaScript",
 };
 
 technoLang.push(technoHTML, technoCSS, technoJavaScript);
 technoTool.push(technoVsCode, technoGit, technoGithub);
 
 for (let i = 0; i < projets.length; i++) {
-    /*Selectionne la section .projets*/
-    const sectionProjets = document.querySelector(".projets");
+  /*Selectionne la section .projets*/
+  const sectionProjets = document.querySelector(".projets");
 
-    //Créer une div qui contient les deux span
-    const divProjet = document.createElement("div");
-    divProjet.classList.add("projet");
-    sectionProjets.appendChild(divProjet);
+  //Créer une div qui contient les deux span
+  const divProjet = document.createElement("div");
+  divProjet.classList.add("projet");
+  sectionProjets.appendChild(divProjet);
 
-    /*Crer une span Qui contiendra le text*/
-    const projetText = document.createElement("span");
-    projetText.classList.add("readme-projet");
-    divProjet.appendChild(projetText);
+  /*Crer une span Qui contiendra le text*/
+  const projetText = document.createElement("span");
+  projetText.classList.add("readme-projet");
+  divProjet.appendChild(projetText);
 
-    /*Créer les deux balises de text (h2 et p)*/
-    const projetName = document.createElement("h2");
-    projetName.textContent = projets[i].name;
+  /*Créer les deux balises de text (h2 et p)*/
+  const projetName = document.createElement("h2");
+  projetName.textContent = projets[i].name;
 
-    const projetReadme = document.createElement("p");
-    projetReadme.textContent = projets[i].readme;
+  const projetReadme = document.createElement("p");
+  projetReadme.textContent = projets[i].readme;
 
-    projetText.appendChild(projetName);
-    projetText.appendChild(projetReadme);
+  projetText.appendChild(projetName);
+  projetText.appendChild(projetReadme);
 
-    /*Créer une span qui contiendra l'image*/
-    const projetPreview = document.createElement("span");
-    projetPreview.classList.add("aperçu-projet");
-    divProjet.appendChild(projetPreview);
+  /*Créer une span qui contiendra l'image*/
+  const projetPreview = document.createElement("span");
+  projetPreview.classList.add("aperçu-projet");
+  divProjet.appendChild(projetPreview);
 
-    /*Créer la balise img*/
-    const projetImg = document.createElement("img");
-    projetImg.src = projets[i].preview;
-    projetImg.alt = projets[i].imageAlt;
-    projetPreview.appendChild(projetImg);
+  /*Créer la balise img*/
+  const projetImg = document.createElement("img");
+  projetImg.src = projets[i].preview;
+  projetImg.alt = projets[i].imageAlt;
+  projetPreview.appendChild(projetImg);
 
-    //Créer un lien vers la page github
-    const projetGithubLink = document.createElement("a");
-    projetGithubLink.href = projets[i].githubLink;
-    projetGithubLink.target = "_blank"
-    projetGithubLink.textContent="Github"
-    projetPreview.appendChild(projetGithubLink);
-};
-
-for (let i=0; i < technoLang.length; i++) {
-    /*Selection de la section techno*/
-    const sectionTechnoLang = document.querySelector(".technoLang");
-
-    /*Création de la div qui contiendra toutes les infos*/
-    const technoElement = document.createElement("div");
-    technoElement.classList.add("techno");
-    sectionTechnoLang.appendChild(technoElement);
-
-    const technoImage = document.createElement("img");
-    technoImage.src = technoLang[i].image;
-    technoImage.alt = technoLang[i].imageAlt;
-
-    const technoName = document.createElement("p");
-    technoName.textContent = technoLang[i].name;
-
-    technoElement.appendChild(technoImage);
-    technoElement.appendChild(technoName);
+  //Créer un lien vers la page github
+  const projetGithubLink = document.createElement("a");
+  projetGithubLink.href = projets[i].githubLink;
+  projetGithubLink.target = "_blank";
+  projetGithubLink.textContent = "Github";
+  projetPreview.appendChild(projetGithubLink);
 }
 
-for (let i=0; i < technoTool.length; i++) {
-    /*Selection de la section techno*/
-    const sectionTechnoTools = document.querySelector(".technoTools");
+for (let i = 0; i < technoLang.length; i++) {
+  /*Selection de la section techno*/
+  const sectionTechnoLang = document.querySelector(".technoLang");
 
-    /*Création de la div qui contiendra toutes les infos*/
-    const technoElement = document.createElement("div");
-    technoElement.classList.add("techno");
-    sectionTechnoTools.appendChild(technoElement);
+  /*Création de la div qui contiendra toutes les infos*/
+  const technoElement = document.createElement("div");
+  technoElement.classList.add("techno");
+  sectionTechnoLang.appendChild(technoElement);
 
-    const technoImage = document.createElement("img");
-    technoImage.src = technoTool[i].image;
-    technoImage.alt = technoTool[i].imageAlt;
+  const technoImage = document.createElement("img");
+  technoImage.src = technoLang[i].image;
+  technoImage.alt = technoLang[i].imageAlt;
 
-    const technoName = document.createElement("p");
-    technoName.textContent = technoTool[i].name;
+  const technoName = document.createElement("p");
+  technoName.textContent = technoLang[i].name;
 
-    technoElement.appendChild(technoImage);
-    technoElement.appendChild(technoName);
+  technoElement.appendChild(technoImage);
+  technoElement.appendChild(technoName);
+}
+
+for (let i = 0; i < technoTool.length; i++) {
+  /*Selection de la section techno*/
+  const sectionTechnoTools = document.querySelector(".technoTools");
+
+  /*Création de la div qui contiendra toutes les infos*/
+  const technoElement = document.createElement("div");
+  technoElement.classList.add("techno");
+  sectionTechnoTools.appendChild(technoElement);
+
+  const technoImage = document.createElement("img");
+  technoImage.src = technoTool[i].image;
+  technoImage.alt = technoTool[i].imageAlt;
+
+  const technoName = document.createElement("p");
+  technoName.textContent = technoTool[i].name;
+
+  technoElement.appendChild(technoImage);
+  technoElement.appendChild(technoName);
+}
+
+function sendMail() {
+    
+    var mail = document.getElementById('email')
+    var message = document.getElementById('message')
+
+    if (message.value !== '' && mail.value !== '') {
+        
+    }
 }

@@ -35,7 +35,7 @@
                 <form action="javascript:sendMail()" method="post">
                     <div class="email">
                         <label for="e-mail">e-mail :</label>
-                        <input type="email" name=" e-mail" id="e-mail">
+                        <input type="email" name="email" id="email">
                     </div>
                     <div class="object">
                         <label for="object">Objet :</label>
@@ -46,7 +46,7 @@
                         <textarea name="message" id="message"></textarea>
                     </div>
                     <div class="send">
-                        <input type="submit">
+                        <input type="submit" onclick="sendMail()">
                         <div>
                             <input type="checkbox" name="copy" id="copy">
                             <label for="copy">recevoir une copie</label>
