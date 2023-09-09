@@ -85,7 +85,7 @@
             flex-direction: column;
             justify-content: space-between;
             gap: 20px;
-            max-width: fit-content;
+            
             background-color: #5f1e00;
             padding: 1em;
             border-radius: 2em;
@@ -94,11 +94,9 @@
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
+                width: 300px;
                 h2 {
                     font-size: 40px;
-                }
-                p {
-                    width: 400px;
                 }
             }  
             &_preview {

@@ -225,7 +225,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  max-width: fit-content;
   background-color: #5f1e00;
   padding: 1em;
   border-radius: 2em;
@@ -235,12 +234,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 300px;
 }
 .section-projet .projets .projet_readme h2 {
   font-size: 40px;
-}
-.section-projet .projets .projet_readme p {
-  width: 400px;
 }
 .section-projet .projets .projet_preview {
   display: flex;
