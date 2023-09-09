@@ -1,0 +1,14 @@
+//abstracts
+@import 'abstracts/mixin.scss';
+@import 'abstracts/variables.scss';
+
+//components
+@import 'components/buttons.scss';
+@import 'components/textes.scss';
+
+//layout
+@import 'layout/body.scss'; 
+@import 'layout/header.scss';
+
+//pages
+@import 'pages/home.scss';

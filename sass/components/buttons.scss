@@ -1,0 +1,24 @@
+.btn {
+    @include flex-row();
+    gap: 20px;
+    align-items: center;
+    background-color: $dark-orange;
+    box-shadow: 5px 5px 10px #000000b0;
+    border-radius: 25px;
+    padding: 8px 16px;
+    max-width: fit-content;
+    text-decoration: none;
+    color: $white;
+    img {
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        width: 40px;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        font-size: 35px;
+    }
+}

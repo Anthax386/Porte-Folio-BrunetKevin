@@ -1,0 +1,105 @@
+$dark-orange: #5f1e00;
+$dark-red: #300000;
+$white: #fff;
+
+@mixin frex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: $dark-orange;
+    @include frex-row();
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+    padding: 0 10%;
+    &_title {
+        color: $white;
+        @include frex-row();
+        align-items: center;
+        padding: 0;
+        img {
+            max-width: 2em;
+            max-height: 2em;
+            border-radius: 50%;
+        }
+        h1 {
+            padding-left: 10px;
+            font-size: 40px;
+        }
+    }
+    &_menu {
+        @include frex-row();
+        align-items: center;
+        width: auto;
+    }
+    &_contact {
+        @include frex-row();
+        justify-content: center;
+        gap: 10px;
+        color: $white;
+        text-decoration: none;
+        font-size: 30px;
+        border-radius: 30px;
+        background-color: $dark-red;
+        font-size: 30px;
+        box-shadow: 5px 5px 10px #000000b0;
+        padding: 12px 16px;
+        img {
+            height: 40px;
+        }
+    }
+}
+
+.about {
+    @include frex-row();
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding: 1em;
+    margin: 90px 25%;
+    &_left {
+        @include flex-column();
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        width: 50%;
+        padding: 1em;
+        color: $white;
+        h2 {
+            font-size: 50px;
+        }
+        p {
+            text-align: justify;
+            font-size: 25px;
+        }
+    }
+    &_right {
+        @include flex-column();
+        align-items: flex-end;
+        width: 50%;
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 40% 5%;
+            box-shadow: 5px 5px 10px #000000b0;
+        }
+        a {
+            padding: 8px 16px;
+            margin: 1em;
+            max-width: fit-content;
+            text-decoration: none;
+            color: $white;
+            border-radius: 25px;
+            background-color: $dark-orange;
+            box-shadow: 5px 5px 10px #000000b0;
+            font-size: 25px;
+        }
+    }
+}
