@@ -7,6 +7,9 @@
     height: 110px;
     padding: 0 10%;
     background-color: $dark-orange;
+    @include respond-to ('mobile') {
+        padding: 0 1em;
+    }
     &_title {
         color: $white;
         @include flex-row();
@@ -35,6 +38,9 @@
             background-color: $dark-red;
             font-size: 30px;
             box-shadow: 5px 5px 10px #000000b0;
+            @include respond-to('mobile') {
+                font-size: 20px;
+            }
         }
     }
     &_contact {

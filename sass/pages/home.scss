@@ -1,5 +1,6 @@
 .about {
-    @include flex-row();
+    display: flex;
+    flex-direction: row;
     gap: 50px;
     justify-content: center;
     align-items: flex-start;
@@ -7,8 +8,15 @@
     padding: 1em;
     margin: 90px 25%;
     height: 400px;
+    @include respond-to ('mobile') {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        height: auto;
+    }
     &_left {
-        @include flex-column();
+        display: flex;
+        flex-direction: column;
         align-items: flex-start;
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -16,12 +24,19 @@
         padding: 1em;
         height: 100%;
         height: 250px;
+        @include respond-to('mobile'){
+            align-items: center;
+        }
     }
     &_right {
-        @include flex-column();
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         height: 100%;
+        @include respond-to('mobile'){
+            align-items: center;
+        }
         img {
             width: 250px;
             height: 250px;
@@ -51,11 +66,20 @@
     padding: 1em;
     gap: 20px;
     color: $white;
+    @include respond-to('mobile'){
+        align-items: center;
+    }
     .projets {
-        @include flex-row();
+        display: flex;
+        flex-direction: row;
         gap: 50px;
         justify-content: center;
         width: 100%;
+        @include respond-to('mobile') {
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
         .projet {   
             display: flex;
             flex-direction: column;
@@ -96,16 +120,29 @@
 }
 
 .section-techno {
-    @include flex-column();
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     margin: 90px 25%;
+    @include respond-to('mobile'){
+        align-items: center;
+    }
     .techno-group {
-        @include flex-column();
+        display: flex;
+        flex-direction: column;
         align-items: center;
         gap: 30px;
+        @include respond-to('mobile'){
+            align-items: center;
+        }
         .techno {
-            @include flex-row();
+            display: flex;
+            flex-direction: row;
             gap: 50px;
+            @include respond-to ('mobile'){
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 }

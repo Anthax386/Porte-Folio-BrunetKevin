@@ -65,6 +65,11 @@ body {
   padding: 0 10%;
   background-color: #5f1e00;
 }
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 1em;
+  }
+}
 .header_title {
   color: #fff;
   display: flex;
@@ -97,6 +102,11 @@ body {
   font-size: 30px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6901960784);
 }
+@media (max-width: 1024px) {
+  .header_menu a {
+    font-size: 20px;
+  }
+}
 .header_contact {
   display: flex;
   flex-direction: row;
@@ -126,6 +136,14 @@ body {
   margin: 90px 25%;
   height: 400px;
 }
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: auto;
+  }
+}
 .about_left {
   display: flex;
   flex-direction: column;
@@ -137,12 +155,22 @@ body {
   height: 100%;
   height: 250px;
 }
+@media (max-width: 1024px) {
+  .about_left {
+    align-items: center;
+  }
+}
 .about_right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 100%;
+}
+@media (max-width: 1024px) {
+  .about_right {
+    align-items: center;
+  }
 }
 .about_right img {
   width: 250px;
@@ -173,12 +201,24 @@ body {
   gap: 20px;
   color: #fff;
 }
+@media (max-width: 1024px) {
+  .section-projet {
+    align-items: center;
+  }
+}
 .section-projet .projets {
   display: flex;
   flex-direction: row;
   gap: 50px;
   justify-content: center;
   width: 100%;
+}
+@media (max-width: 1024px) {
+  .section-projet .projets {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
 }
 .section-projet .projets .projet {
   display: flex;
@@ -223,16 +263,32 @@ body {
   gap: 20px;
   margin: 90px 25%;
 }
+@media (max-width: 1024px) {
+  .section-techno {
+    align-items: center;
+  }
+}
 .section-techno .techno-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
+@media (max-width: 1024px) {
+  .section-techno .techno-group {
+    align-items: center;
+  }
+}
 .section-techno .techno-group .techno {
   display: flex;
   flex-direction: row;
   gap: 50px;
+}
+@media (max-width: 1024px) {
+  .section-techno .techno-group .techno {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .top {
