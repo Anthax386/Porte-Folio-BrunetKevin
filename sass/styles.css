@@ -15,7 +15,6 @@
   padding: 0;
   margin: 0;
   height: 40px;
-  width: 40px;
 }
 .btn p {
   padding: 0;
@@ -140,6 +139,7 @@ body {
   .about {
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     margin: auto;
     height: auto;
   }
