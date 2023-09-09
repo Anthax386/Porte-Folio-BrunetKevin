@@ -11,9 +11,10 @@
     @include respond-to ('mobile') {
         flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
         margin: auto;
         height: auto;
-    }
+    };
     &_left {
         display: flex;
         flex-direction: column;
