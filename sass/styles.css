@@ -255,7 +255,13 @@ body {
 .section-projet .projets .projet_preview img:hover {
   transform: scale(1.5);
 }
-.section-projet .projets .projet_preview .btn {
+.section-projet .projets .projet_preview .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.section-projet .projets .projet_preview .links .btn {
   background-color: #300000;
 }
 

@@ -114,9 +114,16 @@
                         transform: scale(1.5);
                     }
                }
-               .btn {
-                background-color: $dark-red;
+               .links {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 20px;
+                    .btn {
+                        background-color: $dark-red;
+                    }
                }
+               
             }
         }
     }    
