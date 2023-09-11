@@ -109,6 +109,10 @@
                     width: 300px;
                     box-shadow: 5px 5px 10px #000000b0;
                     border-radius: 25px;
+                    transition: transform 400ms ease-in-out;
+                    &:hover {
+                        transform: scale(1.5);
+                    }
                }
                .btn {
                 background-color: $dark-red;

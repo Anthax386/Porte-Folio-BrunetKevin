@@ -8,7 +8,10 @@
     padding: 8px 16px;
     max-width: fit-content;
     text-decoration: none;
+    font-size: 30px;
     color: $white;
+
+    transition: transform 400ms ease-in-out;
     img {
         padding: 0;
         margin: 0;
@@ -19,6 +22,9 @@
         padding: 0;
         margin: 0;
         color: #fff;
-        font-size: 35px;
+        font-size: 30px;
+    }
+    &:hover {
+        transform: scale(1.2);
     }
 }
