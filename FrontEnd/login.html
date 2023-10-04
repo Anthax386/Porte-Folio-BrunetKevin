@@ -8,7 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="../assets/style.css">	
+	<link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
 <header>
@@ -18,25 +18,26 @@
 			<li>projets</li>
 			<li>contact</li>
 			<li>login</li>
-			<li><img src="../assets/icons/instagram.png" alt="Instagram"></li>
+			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
 </header>
 <main>
-    <form action="post" class="loginForm">
+    <form action="" class="loginForm" id="loginForm">
 		<h1 class="loginTitle">Log In</h1>
 		<div class="loginInput">
 			<label for="e-mail">E-mail</label>
-			<input type="email" name="e-mail">
+			<input type="email" name="e-mail" id="e-mail">
 		</div>
 		<div class="loginInput">
 			<label for="password">Mot de passe</label>
-			<input type="password" name="password">
+			<input type="password" name="password" id="password">
 		</div>
-		<button class="btn greenBtn loginBtn">Se connecter</button>
+		<input type="submit" class="btn greenBtn loginBtn" id="loginBtn" value="Se connecter"/>
 		<a href="#">Mot de passe oublié</a>
 	</form>
 </main>
+
 <footer>
 	<nav>
 		<ul>
@@ -44,6 +45,6 @@
 		</ul>
 	</nav>
 </footer>
-<script src="../assets/script.js" async></script>
+<script type="module" src="./assets/scripts/login.js" async></script>
 </body>
 </html>

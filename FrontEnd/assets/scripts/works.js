@@ -1,9 +1,13 @@
-export async function getData(){
+async function getData(){
     const reponse = await fetch('http://localhost:5678/api/works');
     const works = await reponse.json();
     return works;
 };
-getAllWorks();
+
+const tous = document.getElementById('tous');
+const objets = document.getElementById('objects');
+const appartements = document.getElementById('appartements');
+const hotels = document.getElementById('hotels');
 
 function empty(element) {
     while(element.firstElementChild) {
@@ -11,7 +15,7 @@ function empty(element) {
     }
 }
 
-export async function getAllWorks() {
+async function getAllWorks() {
     const works = await getData()
     console.log(works);
 
@@ -32,7 +36,9 @@ export async function getAllWorks() {
     };
 }
 
-export async function getFilteredWorks(Category) {
+getAllWorks();
+
+async function getFilteredWorks(Category) {
     const works = await getData()
     const result = works.filter((work) =>work.categoryId === Category);
     console.log(result);
@@ -53,10 +59,6 @@ export async function getFilteredWorks(Category) {
         figure.append(figcaption);
     };
 }
-export const tous = document.getElementById('tous');
-export const objets = document.getElementById('objects');
-export const appartements = document.getElementById('appartements');
-export const hotels = document.getElementById('hotels');
 
 tous.addEventListener("click", async function(){
     getAllWorks();
