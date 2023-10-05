@@ -14,7 +14,7 @@ function LogIn() {
 
         // Création charge utile au format JSON
         const chargeUtile = JSON.stringify(loginValue);
-    
+        
         const reponse= await fetch('http://localhost:5678/api/users/login', {
             method: "POST",
             headers: {"Content-Type":"application/json"},
@@ -23,8 +23,21 @@ function LogIn() {
 
         //Stokage de la réponse dans constante
         const loginToken = await reponse.json();
-        console.log(loginToken);
-        return loginToken;
+        if (loginToken.userId) {
+            console.log(loginToken.token);
+            return loginToken.token;           
+        }else {
+            console.log(loginToken.message);
+
+            const loginError = document.querySelector('.loginError');
+            loginError.classList.remove('hidden');
+
+            const loginErrorBtn = document.getElementById('loginErrorBtn');
+            loginErrorBtn.addEventListener('click', function(){
+                location.reload();
+            });
+        };
+        
     });
 }
 
