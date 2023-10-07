@@ -25,7 +25,7 @@
   font-size: 30px;
 }
 .btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 h1, h2, h3, h4, p {
@@ -134,7 +134,6 @@ body {
   height: fit-content;
   padding: 1em;
   margin: 90px 25%;
-  height: 400px;
 }
 @media (max-width: 1024px) {
   .about {
@@ -154,7 +153,6 @@ body {
   width: 75%;
   padding: 1em;
   height: 100%;
-  height: 250px;
 }
 @media (max-width: 1024px) {
   .about_left {
@@ -191,7 +189,7 @@ body {
   font-size: 25px;
 }
 
-.section-projet {
+.works {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -203,25 +201,26 @@ body {
   color: #fff;
 }
 @media (max-width: 1024px) {
-  .section-projet {
+  .works {
     align-items: center;
   }
 }
-.section-projet .projets {
+.works .projets {
   display: flex;
   flex-direction: row;
   gap: 50px;
   justify-content: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 @media (max-width: 1024px) {
-  .section-projet .projets {
+  .works .projets {
     flex-direction: column;
     align-items: center;
     margin: auto;
   }
 }
-.section-projet .projets .projet {
+.works .projets .projet {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -231,37 +230,37 @@ body {
   border-radius: 2em;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6901960784);
 }
-.section-projet .projets .projet_readme {
+.works .projets .projet_readme {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 300px;
 }
-.section-projet .projets .projet_readme h2 {
+.works .projets .projet_readme h2 {
   font-size: 40px;
 }
-.section-projet .projets .projet_preview {
+.works .projets .projet_preview {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.section-projet .projets .projet_preview img {
+.works .projets .projet_preview img {
   width: 300px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6901960784);
   border-radius: 25px;
   transition: transform 400ms ease-in-out;
 }
-.section-projet .projets .projet_preview img:hover {
-  transform: scale(1.5);
+.works .projets .projet_preview img:hover {
+  transform: scale(1.1);
 }
-.section-projet .projets .projet_preview .links {
+.works .projets .projet_preview .links {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 20px;
 }
-.section-projet .projets .projet_preview .links .btn {
+.works .projets .projet_preview .links .btn {
   background-color: #300000;
 }
 

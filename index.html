@@ -4,10 +4,8 @@
     <meta charset="utf-8" />
     <title>Kevin BRUNET</title>
 
-    <link rel="icon" type="image/png" href="src/images/favicon2.png" />
-    <link rel="stylesheet" href="sass\styles.css"/>
-
-    <!-- <script src="src/scripts.js" async></script> -->
+    <link rel="icon" type="image/png" href="./asset//images/favicon2.png" />
+    <link rel="stylesheet" href="./asset//sass/styles.css"/>
 
     <!--Import google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +19,7 @@
   <body>
     <header class="header" id="top">
       <div class="header_title">
-        <img src="src/images/moi.png" alt="moi" />
+        <img src="./asset//images/moi.png" alt="moi" />
         <h1>Kevin</h1>
       </div>
       <!--Menu de navigation-->
@@ -49,111 +47,36 @@
           </p>
         </div>
         <div class="about_right">
-          <img src="src/images/moi.png" alt="Kevin BRUNET" />
+          <img src="./asset//images/moi.png" alt="Kevin BRUNET" />
           <a class="btn"
-            href="src/documents/CV-Kevin-BRUNET.pdf"
+            href="./asset//documents/CV-Kevin-BRUNET.pdf"
             download="CV-Kevin-BRUNET.pdf"
             >Télécharger mon CV</a
           >
         </div>
       </section>
       <!--Section projets-->      
-      <section class="section-projet">
-        <h2 class="section-title" id="projets">Mes projets</h2>
-        <div class="projets">
-          <article class="projet">
-            <div class="projet_readme">
-              <h3>Portefolio</h3>
-              <p>Cette première ébauche de porte folio est complètement statique et n'utilise que HTML/Css et Javascript. Elle a été créer peu avant mon entrée en formation.</p>
-            </div>
-            <div class="projet_preview">
-              <img src="src/images/appercu-porte-folio.png" alt="">
-              <div class="links">
-                <a class="btn" target="_blank" href="https://github.com/Anthax386/Porte-Folio-BrunetKevin">Github</a>
-              </div>
-            </div>
-          </article>
-          <article class="projet">
-            <div class="projet_readme">
-              <h3>Booki</h3>
-              <p>Projet réalisé au cours de ma formation comprenant du HTML et du CSS.</p>
-            </div>
-            <div class="projet_preview">
-              <img src="src/images/booki.png" alt="booki-preview">
-              <div class="links">
-                <a class="btn" target="_blank" href="https://anthax386.github.io/Booki-Projet-2/">Github page</a>
-                <a class="btn" target="_blank" href="https://github.com/Anthax386/Booki-Projet-2">Github</a>
-              </div>
-              
-            </div>
-          </article>
-          <article class="projet">
-            <div class="projet_readme">
-              <h3>ohmyfood</h3>
-              <p>Projet réalisé lors de ma formation utilisant HTML, sass avec des animations css. Le tout en mobile first.</p>            </div>
-            <div class="projet_preview">
-              <img src="src/images/ohmyfood.png" alt="ohmyfood-previw">
-              <div class="links">
-                <a class="btn" target="_blank" href="https://anthax386.github.io/ohMyFood-Projet4/">Github page</a>
-                <a class="btn" target="_blank" href="https://github.com/Anthax386/ohMyFood-Projet4">Github</a>
-              </div>
-            </div>
-          </article>
-        </div>
+      <section class="works" id="works">
+
       </section>
       <!--Section technologies-->
       <section class="section-techno" id="techno">
         <h2  class="techno_title">Technologies</h2>
         <div class="techno-group">
           <h3>Langages</h3>
-          <div class="techno">
-            <article class="btn">
-              <img src="src/images/HTML5.png" alt="HTML">
-              <p>HTML</p>
-            </article>
-            <article class="btn">
-              <img src="src/images/CSS3.png" alt="CSS3">
-              <p>CSS</p>
-            </article>
-            <article class="btn">
-              <img src="src/images/sass.png" alt="sass">
-              <p>sass</p>
-            </article>
-            <article class="btn">
-              <img src="src/images/javascript.png" alt="JavaScript">
-              <p>JavaScript</p>
-            </article>
-            <article class="btn">
-              <img src="src/images/react.png" alt="react">
-              <p>React</p>
-            </article>
-          </div>          
+          <div class="techno" id="technoLang">
+          </div>
         </div>
         <div class="techno-group">
           <h3>Outils</h3>
-          <div class="techno">
-            <article class="btn">
-              <img src="src/images/VS-Code.png" alt="VScode">
-              <p>VScode</p>
-            </article>
-            <article class="btn">
-              <img src="src/images/GIT.png" alt="GIT">
-              <p>GIT</p>
-            </article>
-            <article class="btn">
-              <img src="src/images/github.png" alt="GitHub">
-              <p>Github</p>
-            </article>
-            <article class="btn">
-              <img src="src/images/figma.png" alt="figma">
-              Figma
-            </article>
-          </div>         
+          <div class="techno" id="technoTool">
+          </div>
         </div>
       </section>
     </main>
     <footer>
       <a class="top" href="#top">▲ Top ▲</a>
+      <script type="module" src="./asset/scripts.js"></script>
     </footer>
   </body>
 </html>
