@@ -59,12 +59,14 @@ function getWorks (){
     githubBtn.innerHTML = 'Github';
     wrokBtns.appendChild(githubBtn);
 
-    const githubPageBtn = document.createElement('a');
-    githubPageBtn.classList.add('btn');
-    githubPageBtn.setAttribute('target',"_blank");
-    githubPageBtn.href = works[i].githubPageLink;
-    githubPageBtn.innerHTML = 'Github Page' ;
-    wrokBtns.appendChild(githubPageBtn);
+    if (works[i].githubPageLink) {
+      const githubPageBtn = document.createElement('a');
+      githubPageBtn.classList.add('btn');
+      githubPageBtn.setAttribute('target',"_blank");
+      githubPageBtn.href = works[i].githubPageLink;
+      githubPageBtn.innerHTML = 'Github Page' ;
+      wrokBtns.appendChild(githubPageBtn);
+    }
   }
 };
 
