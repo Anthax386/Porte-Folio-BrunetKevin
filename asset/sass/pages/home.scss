@@ -148,6 +148,9 @@
             display: flex;
             flex-direction: row;
             gap: 50px;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
             @include respond-to ('mobile'){
                 flex-direction: column;
                 align-items: center;
