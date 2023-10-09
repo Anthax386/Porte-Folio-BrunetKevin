@@ -18,9 +18,6 @@ function getWorks (){
   sectionWorks.appendChild(worksDiv);
 
   for (let i = 0; i < works.length; i++){
-    
-    console.log('boucle'[i])
-
     const workArticle = document.createElement('article');
     workArticle.classList.add('projet')
     worksDiv.appendChild(workArticle);
@@ -69,7 +66,6 @@ function getWorks (){
     githubPageBtn.innerHTML = 'Github Page' ;
     wrokBtns.appendChild(githubPageBtn);
   }
-  console.log(sectionWorks)
 };
 
 getWorks();
