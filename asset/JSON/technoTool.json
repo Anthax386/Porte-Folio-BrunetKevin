@@ -13,5 +13,10 @@
         "image": "../asset/images/github.png",
         "imageAlt": "Github",
         "name": "Github"
+      },
+      {
+        "image":"../asset/images/figma.png",
+        "imageAlt":"figma",
+        "name":"figma"
       }
 ]
