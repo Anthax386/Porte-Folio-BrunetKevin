@@ -18,5 +18,10 @@
       "image":"../asset/images/json.png",
       "imageAlt":"JSON",
       "name":"JSON"
-    }
+    },
+    { 
+      "image":"../asset/images/sass.png",
+      "imageAlt":"sass",
+      "name":"sass"
+    }  
 ]
