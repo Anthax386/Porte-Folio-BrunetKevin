@@ -24,11 +24,11 @@ function LogIn() {
         //Stokage de la réponse dans constante
         const user = await reponse.json();
         if (user.userId) {
-            console.log(user);
-            window.localStorage.setItem("user", user);
-        }else {
-            console.log(user.message);
+            window.localStorage.setItem("userId", user.userId);
+            window.localStorage.setItem('token', user.token);
 
+            location.href='./index.html';
+        }else {
             const loginError = document.querySelector('.loginError');
             loginError.classList.remove('hidden');
 
