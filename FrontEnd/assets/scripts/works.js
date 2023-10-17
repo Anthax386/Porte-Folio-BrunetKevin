@@ -8,6 +8,7 @@ const tous = document.getElementById('tous');
 const objets = document.getElementById('objects');
 const appartements = document.getElementById('appartements');
 const hotels = document.getElementById('hotels');
+const gallery = document.getElementById('gallery');
 
 function empty(element) {
     while(element.firstElementChild) {
@@ -19,7 +20,6 @@ async function getAllWorks() {
     const works = await getData();
     console.log(works);
 
-    const gallery = document.getElementById('gallery');
     empty(gallery);
 
     for (let i=0; i < works.length; i++) {
@@ -36,14 +36,11 @@ async function getAllWorks() {
     };
 };
 
-getAllWorks();
-
 async function getFilteredWorks(Category) {
     const works = await getData();
     const result = works.filter((work) =>work.categoryId === Category);
     console.log(result);
 
-    const gallery = document.getElementById('gallery');
     empty(gallery);
     for (let i=0; i < result.length; i++) {
         
@@ -89,3 +86,37 @@ hotels.addEventListener("click", async function(){
     appartements.classList.remove('greenBtn');
     hotels.classList.add('greenBtn');
 });
+
+
+function isLoged (){
+    const userId = window.localStorage.getItem("userId");
+    const token = window.localStorage.getItem('token');
+    console.log(userId);
+    console.log(token);
+
+    const loginBtn = document.getElementById('login');
+    const worksSection = document.getElementById('portfolio');
+
+    if (userId == 1 && token){
+        console.log("bite");
+        loginBtn.innerText = 'logout';
+        loginBtn.addEventListener('click', function(){
+            localStorage.clear();
+            location.reload();
+        })
+
+        const editBtn = document.createElement('button');
+        editBtn.innerHTML = '<i class="fa-regular fa-pen-to-square"></i>modifier';
+        editBtn.classList.add('editBtn')
+        worksSection.append(editBtn);
+
+    } else {
+        loginBtn.innerText = "login"
+        loginBtn.addEventListener('click', function(){
+            location.href='./login.html';
+        });
+    }
+}
+
+isLoged();
+getAllWorks();
