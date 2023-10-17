@@ -12,21 +12,21 @@ const hotels = document.getElementById('hotels');
 function empty(element) {
     while(element.firstElementChild) {
        element.firstElementChild.remove();
-    }
-}
+    };
+};
 
 async function getAllWorks() {
-    const works = await getData()
+    const works = await getData();
     console.log(works);
 
     const gallery = document.getElementById('gallery');
     empty(gallery);
 
     for (let i=0; i < works.length; i++) {
-        const figure = document.createElement('figure')
+        const figure = document.createElement('figure');
         gallery.appendChild(figure);
     
-        const img = document.createElement('img')
+        const img = document.createElement('img');
         img.src = works[i].imageUrl;
         figure.appendChild(img);
         
@@ -34,12 +34,12 @@ async function getAllWorks() {
         figcaption.innerHTML = works[i].title;
         figure.append(figcaption);
     };
-}
+};
 
 getAllWorks();
 
 async function getFilteredWorks(Category) {
-    const works = await getData()
+    const works = await getData();
     const result = works.filter((work) =>work.categoryId === Category);
     console.log(result);
 
@@ -50,7 +50,7 @@ async function getFilteredWorks(Category) {
         const figure = document.createElement('figure');
         gallery.appendChild(figure);
     
-        const img = document.createElement('img')
+        const img = document.createElement('img');
         img.src = result[i].imageUrl;
         figure.appendChild(img);
         
@@ -58,7 +58,7 @@ async function getFilteredWorks(Category) {
         figcaption.innerHTML = result[i].title;
         figure.append(figcaption);
     };
-}
+};
 
 tous.addEventListener("click", async function(){
     getAllWorks();
