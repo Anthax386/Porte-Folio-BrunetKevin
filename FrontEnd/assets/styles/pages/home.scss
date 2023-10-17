@@ -26,6 +26,7 @@ nav {
         &:hover {
             color: #B1663C;
         }
+        cursor: pointer;
     }
     a {
         color: inherit;
@@ -67,6 +68,7 @@ h2{
 }
 
 #portfolio{
+    position: relative;
     h2 {
 	    text-align: center;
 	    margin-bottom: 1em;

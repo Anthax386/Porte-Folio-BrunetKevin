@@ -21,3 +21,15 @@
 	color: #ffffff;
 	border: none;
 }
+
+.editBtn {
+	background: none;
+    border: none;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 29%;
+    top: 10px;
+	cursor: pointer;
+}
