@@ -22,23 +22,22 @@ function LogIn() {
         });
 
         //Stokage de la réponse dans constante
-        const loginToken = await reponse.json();
-        if (loginToken.userId) {
-            console.log(loginToken.token);
-            return loginToken.token;           
+        const user = await reponse.json();
+        if (user.userId) {
+            console.log(user);
+            window.localStorage.setItem("user", user);
         }else {
-            console.log(loginToken.message);
+            console.log(user.message);
 
             const loginError = document.querySelector('.loginError');
             loginError.classList.remove('hidden');
 
             const loginErrorBtn = document.getElementById('loginErrorBtn');
             loginErrorBtn.addEventListener('click', function(){
-                location.reload();
+                loginError.classList.add('hidden');
             });
         };
-        
     });
-}
+};
 
 LogIn();
