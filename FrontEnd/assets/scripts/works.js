@@ -1,4 +1,4 @@
-async function getData(){
+export async function getData(){
     const reponse = await fetch('http://localhost:5678/api/works');
     const works = await reponse.json();
     return works;
@@ -35,6 +35,8 @@ async function getAllWorks() {
         figure.append(figcaption);
     };
 };
+
+getAllWorks();
 
 async function getFilteredWorks(Category) {
     const works = await getData();
@@ -86,37 +88,3 @@ hotels.addEventListener("click", async function(){
     appartements.classList.remove('greenBtn');
     hotels.classList.add('greenBtn');
 });
-
-
-function isLoged (){
-    const userId = window.localStorage.getItem("userId");
-    const token = window.localStorage.getItem('token');
-    console.log(userId);
-    console.log(token);
-
-    const loginBtn = document.getElementById('login');
-    const worksSection = document.getElementById('portfolio');
-
-    if (userId == 1 && token){
-        console.log("bite");
-        loginBtn.innerText = 'logout';
-        loginBtn.addEventListener('click', function(){
-            localStorage.clear();
-            location.reload();
-        })
-
-        const editBtn = document.createElement('button');
-        editBtn.innerHTML = '<i class="fa-regular fa-pen-to-square"></i>modifier';
-        editBtn.classList.add('editBtn')
-        worksSection.append(editBtn);
-
-    } else {
-        loginBtn.innerText = "login"
-        loginBtn.addEventListener('click', function(){
-            location.href='./login.html';
-        });
-    }
-}
-
-isLoged();
-getAllWorks();
