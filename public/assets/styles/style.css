@@ -167,6 +167,10 @@ body {
   gap: 20px;
   color: #0f0093;
 }
+.works h2 {
+  font-size: 35px;
+  margin: 0;
+}
 .works .projets {
   display: flex;
   flex-direction: row;
@@ -191,8 +195,8 @@ body {
   gap: 20px;
   width: 300px;
 }
-.works .projets .projet_readme h2 {
-  font-size: 40px;
+.works .projets .projet_readme h3 {
+  font-size: 30px;
 }
 .works .projets .projet_preview {
   display: flex;
@@ -225,11 +229,19 @@ body {
   gap: 20px;
   margin: 90px 25%;
 }
+.section-techno h2 {
+  font-size: 35px;
+  margin: 0;
+}
 .section-techno .techno-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+}
+.section-techno .techno-group h3 {
+  font-size: 30px;
+  margin: 0;
 }
 .section-techno .techno-group .techno {
   display: flex;
