@@ -4,7 +4,7 @@
       "name":"Booki",
       "readme_short":"Projet réalisé au cours de ma formation comprenant du HTML et du CSS.",
       "readme_long":"Projet réalisé au cours de ma formation comprenant du HTML et du CSS. L'objectif était d'apprendre à utiliser le display:flex;, le responsive design et les balises sémantiques.",
-      "preview":"../assets/images/booki.png",
+      "preview":"gs://portefolio-kevinbrunet.appspot.com/booki.png",
       "githubLink":"https://github.com/Anthax386/Booki-Projet-2.git",
       "githubPageLink":"https://anthax386.github.io/Booki-Projet-2/",
       "langages" : {
