@@ -7,14 +7,21 @@
         <link rel="stylesheet" href="./assets/styles/style.css">
         <script type="module" async src="./assets/scripts/index.js"></script>
     </head>
-    <body class="dark">
+    <body id="body">
         <header>
             <h1 class="title">Portefolio Kevin Brunet - Developpeur FrontEnd</h1>
             <nav class="header_menu">
                 <a class="btn" href="#about">Qui suis-je ?</a>
                 <a class="btn" href="#projets">Projets</a>
                 <a class="btn" href="#techno">Technologies</a>
-              </nav>
+            </nav>
+            <div class="switch-bloc">
+                <p>Mode sombre</p>
+                <label class="switch">
+                    <input type="checkbox" id="switch">
+                    <span></span>
+                </label>
+            </div>
         </header>
         <main>
             <section id="about">
