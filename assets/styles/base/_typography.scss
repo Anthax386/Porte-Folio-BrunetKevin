@@ -1,0 +1,14 @@
+// # Typography rules
+@import '../utils/_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat+Alternates:wght@400;700&display=swap');
+
+main, header, footer, h1, h2, h3, h4, h5, h6, p, button, div, span, a, li, ul {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: $blue;
+}
+
+.title {
+    font-family: 'Kalam', cursive;
+    font-size: 40px;
+    color: $blue;
+}

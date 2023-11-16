@@ -1,0 +1,27 @@
+[
+    {
+      "image": "../assets/images/HTML5.png",
+      "imageAlt": "HTML",
+      "name": "HTML"
+    },
+    {
+      "image": "../assets/images/CSS3.png",
+      "imageAlt": "CSS",
+      "name": "CSS"
+    },
+    {
+      "image": "../assets/images/javascript.png",
+      "imageAlt": "JavaScript",
+      "name": "JavaScript"
+    },
+    {
+      "image":"../assets/images/json.png",
+      "imageAlt":"JSON",
+      "name":"JSON"
+    },
+    { 
+      "image":"../assets/images/sass.png",
+      "imageAlt":"sass",
+      "name":"sass"
+    }  
+]

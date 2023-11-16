@@ -1,0 +1,22 @@
+[
+    {
+        "image": "../assets/images/VS-Code.png",
+        "imageAlt": "VS Code",
+        "name": "vs Code"
+      },
+      {
+        "image": "../assets/images/GIT.png",
+        "imageAlt": "GIT",
+        "name": "GIT"
+      },
+      {
+        "image": "../assets/images/github.png",
+        "imageAlt": "Github",
+        "name": "Github"
+      },
+      {
+        "image":"../assets/images/figma.png",
+        "imageAlt":"figma",
+        "name":"figma"
+      }
+]

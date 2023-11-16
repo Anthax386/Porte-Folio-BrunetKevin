@@ -1,0 +1,31 @@
+// --- Base ---
+@import 'base/_typography.scss';
+
+// --- Components ---
+@import 'components/_buttons.scss';
+@import 'components/_carousel.scss';
+@import 'components/_dropdown.scss';
+
+// --- layout ---
+@import 'layout/_footer.scss';
+@import 'layout/_forms.scss';
+@import 'layout/_grid.scss';
+@import 'layout/_header.scss';
+@import 'layout/_navigation.scss';
+@import 'layout/_sidebar.scss';
+
+// --- pages ---
+@import 'pages/_contact.scss';
+@import 'pages/_home.scss';
+
+// --- themes --- 
+@import 'themes/admin.scss';
+@import 'themes/dark.scss';
+@import 'themes/theme.scss';
+
+// --- utils ---
+@import 'utils/_breakpoints.scss';
+@import 'utils/_functions.scss';
+@import 'utils/_helpers.scss';
+@import 'utils/_mixins.scss';
+@import 'utils/_variables.scss';

@@ -1,11 +1,11 @@
 {
-  "name": "porte-folio",
+  "name": "firebasetest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass":"sass --watch ./asset/sass/main.scss:./asset/sass/styles.css"
+    "sass": "sass --watch ./assets/styles/main.scss:./assets/styles/style.css"
   },
   "author": "",
   "license": "ISC"
