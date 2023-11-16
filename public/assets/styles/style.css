@@ -272,5 +272,11 @@ body {
 .dark {
   background: rgb(41, 41, 50);
 }
+.dark a, .dark p, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark span, .dark header, .dark main, .dark footer {
+  color: #1900ff;
+}
+.dark .btn {
+  border-color: #1900ff;
+}
 
 /*# sourceMappingURL=style.css.map */
