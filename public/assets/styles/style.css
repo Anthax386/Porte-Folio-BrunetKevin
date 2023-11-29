@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat+Alternates:wght@400;700&display=swap");
 main, header, footer, h1, h2, h3, h4, h5, h6, p, button, div, span, a, li, ul {
   font-family: "Montserrat Alternates", sans-serif;
-  color: #0f0093;
+  color: rgb(25, 0, 255);
 }
 
 .title {
   font-family: "Kalam", cursive;
   font-size: 40px;
-  color: #0f0093;
+  color: rgb(25, 0, 255);
 }
 
 .switch-bloc {
@@ -36,7 +36,7 @@ main, header, footer, h1, h2, h3, h4, h5, h6, p, button, div, span, a, li, ul {
   height: 0;
 }
 .switch input:checked + span {
-  background-color: #0f0093;
+  background-color: #1900ff;
 }
 .switch input:checked + span::before {
   left: 34px;
@@ -47,7 +47,7 @@ main, header, footer, h1, h2, h3, h4, h5, h6, p, button, div, span, a, li, ul {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(15, 0, 147, 0.3);
+  background: rgba(25, 0, 255, 0.3);
   border-radius: 20px;
 }
 .switch input + span::before {
@@ -69,10 +69,10 @@ main, header, footer, h1, h2, h3, h4, h5, h6, p, button, div, span, a, li, ul {
   border-radius: 25px;
   padding: 8px 16px;
   max-width: fit-content;
-  color: #0f0093;
+  color: rgb(25, 0, 255);
   font-size: 15px;
-  border: 1px solid #0f0093;
-  background-color: rgba(15, 0, 147, 0.1);
+  border: 1px solid rgb(25, 0, 255);
+  background-color: rgba(25, 0, 255, 0.1);
   transition: transform 400ms ease-in-out;
   color: inherit;
   text-decoration: none;
@@ -91,7 +91,7 @@ header {
 header .title {
   margin: 0;
   padding: 0;
-  color: #0f0093;
+  color: rgb(25, 0, 255);
 }
 header .header_menu {
   display: flex;
@@ -102,11 +102,11 @@ header .header_menu {
 header .header_menu a {
   text-decoration: none;
   font-family: "Montserrat Alternates", sans-serif;
-  color: #0f0093;
+  color: rgb(25, 0, 255);
 }
 
 body {
-  background: rgba(136, 133, 165, 0.3);
+  background: linear-gradient(rgba(25, 0, 255, 0.3), rgba(25, 0, 255, 0.1));
 }
 
 .about {
@@ -147,7 +147,7 @@ body {
   width: 250px;
   height: 250px;
   border-radius: 40% 5%;
-  border: 1px solid #0f0093;
+  border: 1px solid rgb(25, 0, 255);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6901960784);
 }
 .about_right a {
@@ -165,7 +165,7 @@ body {
   margin: 90px 25%;
   padding: 1em;
   gap: 20px;
-  color: #0f0093;
+  color: rgb(25, 0, 255);
 }
 .works h2 {
   font-size: 35px;
@@ -184,7 +184,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  background-color: rgba(15, 0, 147, 0.1);
+  background-color: rgba(25, 0, 255, 0.1);
   padding: 1em;
   border-radius: 2em;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6901960784);
@@ -220,7 +220,7 @@ body {
   gap: 20px;
 }
 .works .projets .projet_preview .links .btn {
-  background-color: rgba(15, 0, 147, 0.3);
+  background-color: rgba(25, 0, 255, 0.3);
 }
 
 .section-techno {
@@ -270,7 +270,7 @@ body {
 }
 
 .dark {
-  background: rgb(41, 41, 50);
+  background: linear-gradient(#292932, rgba(41, 41, 50, 0.9));
 }
 .dark a, .dark p, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark button, .dark span, .dark header, .dark main, .dark footer {
   color: #8177e1;

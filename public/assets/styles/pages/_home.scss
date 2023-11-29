@@ -1,5 +1,5 @@
 body {
-    background: rgba($color: #8885a5b0, $alpha: 0.3) ;
+    background: linear-gradient(rgba($blue, $alpha: 0.3), rgba($blue, $alpha: 0.1));
 }
 .about {
     display: flex;

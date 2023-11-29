@@ -1,5 +1,5 @@
 .dark {
-    background: rgba(41, 41, 50, 1);
+    background:linear-gradient(rgba($dark, 1), rgba($dark, 0.9)) ;
     a, p, h1, h2, h3, h4, h5, h6, button, span, header, main, footer {
         color: rgba($color: #8177e1, $alpha: 1.0)
     }
