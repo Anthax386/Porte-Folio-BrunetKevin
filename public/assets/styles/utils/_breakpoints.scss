@@ -1,24 +1,25 @@
 $breakpoints: (
-  'desktop': (min-width: 1024px),
-  'tablet' : (max-width: 1023px),
-  'mobile' : (max-width: 768px),
+  'small': (max-width: 375px),
+  'medium': (max-width: 768px),
+  'large': (max-width: 1024px),
+  'huge': (max-width: 1440px),
 );
 
 @mixin respond-to($breakpoint) {
-    $raw-query: map-get($breakpoints, $breakpoint);
-  
-    @if $raw-query {
-      $query: if(
-        type-of($raw-query) == 'string',
-        unquote($raw-query),
-        inspect($raw-query)
-      );
-  
-      @media #{$query} {
-        @content;
-      }
-    } @else {
-      @error 'No value found for `#{$breakpoint}`. '
-           + 'Please make sure it is defined in `$breakpoints` map.';
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
     }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
 }

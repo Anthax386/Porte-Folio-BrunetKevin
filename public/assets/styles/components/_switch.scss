@@ -1,3 +1,4 @@
+@import '../utils/_breakpoints.scss';
 .switch-bloc {
     position: absolute;
     right: 50px;
@@ -6,6 +7,13 @@
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    @include respond-to ('large') {
+        top: 70px;
+    }
+    @include respond-to ('medium') {
+        display: none;
+        opacity: 0;
+    }
 }
 .switch {
     display: inline-block;
